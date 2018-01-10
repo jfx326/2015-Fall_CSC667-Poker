@@ -14,6 +14,10 @@ pokerApp.controller('AuthCtrl', ['$scope', '$rootScope', '$state', '$timeout', '
 			$scope.error = error.data.error;
 		});
 	};
+	
+	$scope.goRegister = function() {
+	  $state.go('register');
+	};
 
 	$scope.register = function() {
 		Auth.register($scope.user).then(function(){
@@ -23,4 +27,8 @@ pokerApp.controller('AuthCtrl', ['$scope', '$rootScope', '$state', '$timeout', '
 			$scope.error = error.data.errors;
 		})
 	};
+	
+	$scope.goLogin = function() {
+	  $state.go('login');
+	}
 }]);
