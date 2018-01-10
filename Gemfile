@@ -6,7 +6,7 @@ gem 'rails', '5.1.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.7'
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '4.0.2'
+gem 'uglifier', '4.1.3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.7.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -44,8 +44,8 @@ gem 'angular_rails_csrf', '2.1.1'
 
 gem 'pusher', '1.3.1'
 
-gem 'devise', '4.3.0'
-gem 'omniauth', '1.7.1'
+gem 'devise', '4.4.0'
+gem 'omniauth', '1.8.1'
 gem 'omniauth-facebook', '4.0.0'
 
 gem 'rails_12factor'
