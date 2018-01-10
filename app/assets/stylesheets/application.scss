@@ -10,11 +10,11 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require bootstrap/dist/css
- *= require bootstrap-material-design/dist/css
- *= require font-awesome/scss
- *= require roboto-fontface/css/roboto-fontface.scss
- *= require nouislider/distribute
+ *= require bootstrap/dist/css/bootstrap
+ *= require bootstrap-material-design/dist/css/bootstrap-material-design
+ *= require font-awesome/scss/font-awesome
+ *= require roboto-fontface/css/roboto/sass/roboto-fontface
+ *= require nouislider/distribute/nouislider
  *= require_tree .
  *= require_self
  */
