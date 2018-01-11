@@ -56,10 +56,14 @@ var pokerApp = angular.module('poker', [
 
                 Auth.currentUser().then(function (user) {
                     $rootScope.user = user;
+                    console.log($rootScope.user);
+                    console.log(user);
                 });
 
-                $rootScope.$on('device:new-registration', function (e, user) {
+                $rootScope.$on('devise:new-registration', function (e, user) {
                     $rootScope.user = user;
+                    console.log($rootScope.user);
+                    console.log(user);
                 });
 
                 $rootScope.$on('devise:login', function (e, user) {
@@ -67,6 +71,8 @@ var pokerApp = angular.module('poker', [
                     apiServices.AccountService.GetPicture($rootScope.user._id).success(function (result){
                         $rootScope.user.image_url = result;
                     });
+                    console.log($rootScope.user);
+                    console.log(user);
                 });
 
                 $rootScope.$on('devise:logout', function (e, user) {
